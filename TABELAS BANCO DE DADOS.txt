@@ -1,0 +1,35 @@
+CREATE DATABASE Turismo;
+use Turismo;
+
+CREATE TABLE
+  Usuario (
+    Id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(255) NOT NULL,
+    Nome VARCHAR(11) UNIQUE NOT NULL
+  );
+  
+  CREATE TABLE
+  Destinos (
+    Id_destino INT AUTO_INCREMENT PRIMARY KEY,
+    Destino VARCHAR(255) NOT NULL,
+    Diaria VARCHAR(11) UNIQUE NOT NULL
+  );
+  
+
+CREATE TABLE
+  Mensagens (
+    Id_mensagem INT AUTO_INCREMENT PRIMARY KEY,
+    data DATETIME,
+    Mensagem TEXT,
+    Id_usuario INT NOT NULL,
+    FOREIGN KEY (Id_usuario) REFERENCES Usuario (Id_usuario)
+  );
+  
+  CREATE TABLE
+  Contrata (
+    Id_contrato INT AUTO_INCREMENT PRIMARY KEY,
+     Id_usuario INT NOT NULL,
+     Id_destino INT NOT NULL,
+     FOREIGN KEY (Id_usuario) REFERENCES Usuario (Id_usuario),
+    FOREIGN KEY (Id_destino) REFERENCES Destinos (Id_destino)
+  );

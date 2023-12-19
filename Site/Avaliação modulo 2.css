@@ -1,0 +1,112 @@
+
+.container{
+    display: grid;
+}
+
+
+.cabecalho {
+    background-color: rgb(212, 172, 27);
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    background-color: rgb(179, 208, 224);
+    height: auto;
+    margin-bottom: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   
+ 
+}
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login {
+    flex: 20%;
+    display: flexbox;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.procurados {
+    flex:80%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.cadastro{
+    display: grid;
+    
+}
+
+.agenda{
+    display: grid;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+footer {
+    display: flexbox;
+    background-color: rgb(33, 168, 202);
+    height: auto;
+    text-align: center;
+    
+}
+
+.promo {
+    flex: 100%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.destino{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items:flex-start;
+    border: 20px;
+    
+}
+img{
+   
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .conteudo,
+    .navbar{
+        flex-direction: column;
+    }
+}
